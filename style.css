@@ -23,7 +23,7 @@ body{
     background-color: rgb(98, 142, 172);
     padding: 20px;
     border-radius: 5px;
-    height: 75%;
+    height: 100%;
     width: 50%;
     max-width: 600px;
 }
@@ -64,6 +64,7 @@ body{
 .stats{
     display: flex;
     flex-direction: column;
+    
 }
 
 .progress
@@ -72,6 +73,7 @@ body{
     justify-content: space-evenly;
     gap: 1rem;
     flex-wrap: wrap;
+    ;
 }
 
 .circle{
@@ -87,9 +89,31 @@ body{
     columns: white;
     font-weight: 700;
     background: conic-gradient(#3d94c7 var(--progress-degree,0%),#164c6b 0%) ;
+    flex-direction: column;
 }   
 
 .circle span{
     position: relative;
     z-index: 2;
+}
+
+.statscard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.card{
+    background-color: #0496eb;
+    width:80%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
 }
